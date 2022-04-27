@@ -1,0 +1,69 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 13px;
+    background-color: skyblue;
+    align-items: center;
+
+}
+.nav {
+    display: flex;
+}
+/* .logo{
+    display: flex;
+    justify-content: flex-start;
+} */
+li {
+    margin-left:10px;
+    margin-right: 10px;
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  header div img {
+    height: 85px;
+    width: 85px;  
+}
+h1 {
+ font-size: 15px;
+
+}
+form {
+    background-color: #282c34;
+    width: 400px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  ::placeholder {
+    color: #fff;
+    opacity: 0.8; 
+  }
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+  .header-img{
+      height: 30px;
+      width: 30px;
+  }
+  
+  .user-container{
+      display: flex;
+      align-items: center;
+  }

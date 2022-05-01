@@ -1,3 +1,4 @@
+
 .header {
     display: flex;
     justify-content: space-around;
@@ -66,4 +67,9 @@ form {
   .user-container{
       display: flex;
       align-items: center;
+  }
+
+  .icon {
+    font-size: 30px;
+    padding: 10px;
   }

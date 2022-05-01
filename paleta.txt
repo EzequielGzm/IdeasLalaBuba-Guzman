@@ -1,0 +1,11 @@
+opc 1= {
+FFA69E
+FAF3DD
+B8F2E6
+AED9E0
+5E6472 
+}
+
+opc 2={
+    https://coolors.co/9b5de5-f15bb5-fee440-00bbf9-00f5d4
+}

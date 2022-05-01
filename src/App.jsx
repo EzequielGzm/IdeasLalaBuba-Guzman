@@ -2,6 +2,7 @@ import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import NavBar from './components/NavBar'
+import ItemListContainer from './components/ItemListContainer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,11 +10,11 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <header className="App-header">
+      <body className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Buen dia :D</p>
-  
-      </header>
+        <p>Ideas LALA BUBA en construcción...</p>
+        <ItemListContainer greetings={"Hola! Voy a ser una página genial... solo esperá "}/>
+      </body>
     </div>
   )
 }

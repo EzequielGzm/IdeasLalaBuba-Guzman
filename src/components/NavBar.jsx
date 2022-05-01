@@ -1,7 +1,8 @@
 import React from "react";
-import logo from "../img/logo1.png"
-import user from "../img/user.png"
-import './NavBar.css';
+import logo from "../assets/img/logo1.png"
+import '../assets/css/NavBar.css'
+import CartWidget from "./CartWidget";
+import UserWidget from "./UserWidget";
 
 
 function NavBar() {
@@ -25,7 +26,8 @@ function NavBar() {
              </ul>
           </nav>
              <div className="user-container">
-             <img className="header-img" src={user} alt="user"/>
+             <CartWidget/>
+             <UserWidget/>
              <button style={{fontSize:13}}>Iniciar sesión</button>
              </div>
         

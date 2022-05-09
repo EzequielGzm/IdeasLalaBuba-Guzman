@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+}
+
+.container-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border:3px solid black;
+    flex-direction:row;
+  }
+/* .container-main button {
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 60px;
+    background-color: #61dafb;
+    font-size: 30;
+    margin: 20px;
+   } */
+  article{
+      padding: 20px;
+  }
+

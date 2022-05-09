@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     padding: 13px;
-    background-color: skyblue;
+    background-color: #A0C4FF;
     align-items: center;
 
 }
@@ -30,7 +30,6 @@ li a {
 }
 h1 {
  font-size: 15px;
-
 }
 form {
     background-color: #282c34;

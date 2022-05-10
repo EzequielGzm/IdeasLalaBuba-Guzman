@@ -11,12 +11,12 @@ const ItemCount = ({stock,initial,onAdd}) => {
    }
    
    function decrement() {
-     if(quantity < stock ) {
+     if(quantity <= stock ) {
        setQuantity(quantity - 1)
      }
    }
    function addCart() {
-    if(quantity != 0){ 
+    if(quantity != initial){ 
     onAdd(quantity)
   }
    }

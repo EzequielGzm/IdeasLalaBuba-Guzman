@@ -2,7 +2,6 @@
 .container-contador{ 
     display: flex;
     align-items: center;
-    width: 100%;
     background-color: #9BF6FF;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -15,7 +14,6 @@
 }
 
 span{
-    height: 50px;
     padding: 12px;
     width: 30px;
     text-align:center;

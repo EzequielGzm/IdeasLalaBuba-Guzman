@@ -1,5 +1,6 @@
 * {
     margin: 0;
+        
 }
 
 .container-main {
@@ -22,3 +23,9 @@
       padding: 20px;
   }
 
+ img{
+     width: 400px;
+     padding: 20px;
+ }
+
+ 

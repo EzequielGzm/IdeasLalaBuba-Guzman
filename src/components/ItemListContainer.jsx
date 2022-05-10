@@ -1,14 +1,13 @@
+import { useEffect, useState } from "react"
 import "../assets/css/ItemListContainer.css"
 import ItemList from "./ItemList"
 
-
 const ItemListContainer = () => {
-  
-  
+
   return (
-    <div className="esto">
+    <body>
     <ItemList/>
-    </div>
+    </body>
   )
 }
 

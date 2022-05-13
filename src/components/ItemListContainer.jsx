@@ -1,14 +1,13 @@
-import { useEffect, useState } from "react"
-import "../assets/css/ItemListContainer.css"
-import ItemList from "./ItemList"
+
+import "../assets/css/ItemListContainer.css";
+import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
-
   return (
-    <body>
-    <ItemList/>
-    </body>
-  )
-}
+    <div>
+      <ItemList />
+    </div>
+  );
+};
 
-export default ItemListContainer
+export default ItemListContainer;

@@ -1,37 +1,26 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import "../assets/css/contador.css"
  
 const ItemCount = ({stock,initial,onAdd}) => {
    const [quantity,setQuantity] = useState(initial)
    
-   function increment() {
-     if(quantity < stock){
-       setQuantity(quantity + 1)
-     }
-   }
-   
-   function decrement() {
-     if(quantity <= stock ) {
-       setQuantity(quantity - 1)
-     }
-   }
-   function addCart() {
-    if(quantity != initial){ 
-    onAdd(quantity)
-  }
+   function addProduct(num) {
+     setQuantity(quantity + num)
    }
 
    return (
      <div className="container1">
-      <div className="container-contador">
-        <button onClick={decrement} disabled={quantity === initial ? true : null}> - </button>
+      
+       <div className="container-contador">
+        <button onClick={()=> addProduct(-1)} disabled={quantity === initial ? true : null}> - </button>
         <span>{quantity}</span>
-        <button onClick={increment}> + </button>
-      </div>
-      <button className="button1" onClick={addCart}>Agregar al carrito</button>
-    </div>
+        <button onClick={() => addProduct(+1)} disabled={quantity === stock ? true : null} > + </button>
+       </div>
+
+        <button className="button1" onClick={()=>{onAdd(quantity)}} disabled={stock === 0? true : null}>Agregar al carrito</button>
+     </div>
    )
   }
  
-
  export default ItemCount

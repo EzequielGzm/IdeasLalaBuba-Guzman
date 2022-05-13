@@ -1,8 +1,15 @@
 import { AiOutlineShoppingCart} from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 import "../assets/css/NavBar.css"
+
+
 const CartWidget = () => {
   return (
-    <h3 className='icon'> <AiOutlineShoppingCart/> </h3>
+    <>
+    <Link to='/cart' >
+    <button className='icon'> <AiOutlineShoppingCart/> </button>
+    </Link>
+    </>
   )
 }
 

@@ -1,8 +1,6 @@
 * {
-    margin: 0;
-        
+    margin: 0;    
 }
-
 .container-main {
     display: flex;
     align-items: center;
@@ -11,17 +9,12 @@
     border:3px solid black;
     flex-direction:row;
   }
-/* .container-main button {
-    border: 1px solid black;
-    box-sizing: border-box;
-    width: 60px;
-    background-color: #61dafb;
-    font-size: 30;
-    margin: 20px;
-   } */
   article{
       padding: 20px;
-  }
+      margin: 20px;
+      background-color: rgba(0, 0, 255, 0.2);
+      width: 90%;
+    }
 
  img{
      width: 400px;

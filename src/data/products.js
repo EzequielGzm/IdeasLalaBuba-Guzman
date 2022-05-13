@@ -3,7 +3,7 @@ import rosa from "../assets/img/tocadorRosa.jpg"
 
 const productos = [
     { 
-     id: '1',
+     id: "1",
      title: "Tocador Nieve",
      price: 6000,
      img: nieve
@@ -16,4 +16,12 @@ const productos = [
     }
   ]
 
+  export const getDetailById = (id) =>{
+   return new Promise((resolve)=>{
+     setTimeout(()=>{
+       const param = id ? productos.find((prod)=> prod.id === id) : productos
+       resolve(param)
+     }, 2000)
+   })
+  }
 export default productos

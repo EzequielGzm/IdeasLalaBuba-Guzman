@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
 
-const Item = ({title, price, img}) => {
+const Item = ({title, price, img, id}) => {
   return (
     <article>
       <h1>{title}</h1>
@@ -15,8 +15,12 @@ const Item = ({title, price, img}) => {
           alert(`${quantity} productos fueron agregados al carrito`)
         }
       />
-      <button className="button1">Ver detalle del producto</button>
       </div>
+     
+      <Link to={`/item/${id}`}>
+      <button className="button1">Ver detalle del producto</button>
+      </Link>
+      
     </article>
   );
 };

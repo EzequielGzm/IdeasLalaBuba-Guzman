@@ -1,10 +1,10 @@
-
 import logo from "../assets/img/logo1.png"
 import '../assets/css/NavBar.css'
 import CartWidget from "./CartWidget";
 import UserWidget from "./UserWidget";
 import { Link } from "react-router-dom";
-const categoria = {id:"1", name:'Tocadores'}
+import Dropdown from "./Dropdown";
+
 
 function NavBar() {
     return (
@@ -17,20 +17,21 @@ function NavBar() {
           <form id="form">
           <input type="search" placeholder="Buscar productos..."/>
           </form>
+          
           <nav>
-             <ul className="nav">
-               <li><a href="/">Inicio</a></li>  
+             <ul >
+              
+               <Dropdown/>
+               <Link to="/contacto"> Contacto</Link> 
                
-               <Link to={`/category/${categoria.id}`}>Productos</Link>  
-               
-               <li><a href="/">Contacto</a></li>  
              </ul>
+   
           </nav>
          
              <div className="user-container">
              <CartWidget/>
              <UserWidget/>
-             <button style={{fontSize:13}}>Iniciar sesión</button>
+             <button>Iniciar sesión</button>
              </div>
         
       </header>
@@ -38,5 +39,6 @@ function NavBar() {
        
     )
 }
+
 export default NavBar
 

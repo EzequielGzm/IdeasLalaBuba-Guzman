@@ -4,15 +4,17 @@ import rosa from "../assets/img/tocadorRosa.jpg"
 const productos = [
     { 
      id: "1",
-     title: "Tocador Nieve",
+     title: "Tocador celeste",
      price: 6000,
-     img: nieve
+     img: nieve,
+     category: "celeste"
     },
     {
       id:"2",
-      title:"Tocador Rosa",
+      title:"Tocador rosa",
       price:6000,
-      img: rosa
+      img: rosa,
+      category: "rosado"
     }
   ]
 

@@ -1,0 +1,35 @@
+.dropdown{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.dropdown-menu{
+    width: 10rem;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.dropdown-menu:hover{
+    color: white;
+}
+
+.dropdown-list{   
+    list-style-type: none ;
+    position: absolute;
+}
+.dropdown-list li{
+    border: 1px solid transparent;
+   
+  
+}
+
+
+
+/* .dropdown-list:hover{
+    border: 1px solid white;
+} */

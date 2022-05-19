@@ -1,4 +1,9 @@
-
+*{
+  text-decoration: none;
+}
+a:visited{
+  color: black;
+}
 
 .header {
     display: flex;
@@ -6,6 +11,7 @@
     padding: 13px;
     background-color: #A0C4FF;
     align-items: center;
+    
 
 }
 .nav {
@@ -72,3 +78,6 @@ form {
     font-size: 30px;
     padding: 10px;
   }
+
+  
+  

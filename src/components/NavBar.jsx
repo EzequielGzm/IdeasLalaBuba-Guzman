@@ -1,9 +1,10 @@
-import React from "react";
+
 import logo from "../assets/img/logo1.png"
 import '../assets/css/NavBar.css'
 import CartWidget from "./CartWidget";
 import UserWidget from "./UserWidget";
-
+import { Link } from "react-router-dom";
+const categoria = {id:"1", name:'Tocadores'}
 
 function NavBar() {
     return (
@@ -20,11 +21,12 @@ function NavBar() {
              <ul className="nav">
                <li><a href="/">Inicio</a></li>  
                
-               <li><a href="/">Productos</a></li>  
+               <Link to={`/category/${categoria.id}`}>Productos</Link>  
                
                <li><a href="/">Contacto</a></li>  
              </ul>
           </nav>
+         
              <div className="user-container">
              <CartWidget/>
              <UserWidget/>

@@ -23,9 +23,8 @@ const ItemList = () => {
       {loading ? (
         <h1>Cargando...</h1>
       ) : (
-        products.map((product) => (
-          <div >
-          
+        products.map((product,id) => (
+          <div key={id}>
           <Item
               id={product.id}  
               title={product.title}

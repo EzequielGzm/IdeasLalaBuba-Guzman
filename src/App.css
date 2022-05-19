@@ -1,4 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Handlee&family=My+Soul&family=Shadows+Into+Light&display=swap');
+
+
 .App {
   text-align: center;
   background-color: #FFFFFC;
+  font-family: 'Handlee', cursive;
+  text-decoration: none;
+  
 }

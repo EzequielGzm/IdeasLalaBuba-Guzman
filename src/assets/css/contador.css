@@ -34,4 +34,12 @@ span {
   height: 50px;
   border: 1px solid;
   margin: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
 }

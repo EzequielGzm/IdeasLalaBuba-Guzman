@@ -11,20 +11,20 @@
   background-image: url("https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
 }
-article {
+.article-container {
   padding: 20px;
+    background-color: rgba(0, 0, 255, 0.2);
   margin: 20px;
-  background-color: rgba(0, 0, 255, 0.2);
-  width: 90%;
-  box-shadow: -1px 23px 9px rgb(0 0 0 / 35%);
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
   text-decoration: none;
+  border-radius: 5px; 
 }
 
-article:visited {
+/* article:visited {
   color: black;
   font-family: arial;
   text-decoration: none;
-}
+} */
 
 img {
   width: 400px;

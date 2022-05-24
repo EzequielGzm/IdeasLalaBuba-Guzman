@@ -2,13 +2,13 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import "../assets/css/contador.css"
  
-const ItemCount = ({stock,initial,onAdd,quantity}) => {
+const ItemCount = ({stock,initial,onAdd}) => {
    const [qty,setQuantity] = useState(initial)
    
    function addProduct(num) {
      setQuantity(qty + num)
    }
-
+   
    return (
      <div className="container1">
       

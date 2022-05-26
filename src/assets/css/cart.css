@@ -1,0 +1,11 @@
+.article-cart{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 255, 0.2);
+  margin: 20px;
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+  text-decoration: none;
+  border-radius: 5px; 
+}

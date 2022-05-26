@@ -12,7 +12,6 @@ const Dropdown = () => {
         Productos
         {drop? (<ul className="dropdown-list" >
             <Link to="/category"> <li>Tocadores </li></Link>
-            <Link to="/cart"><li>Cositas</li></Link>
             <Link to="/cart"><li>Alhajeros</li></Link>            
         </ul>): 
         null}

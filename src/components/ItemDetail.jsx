@@ -11,7 +11,8 @@ const ItemDetail = ({ item }) => {
   const onAdd = (qty) => {
     addItem({ ...item, qty })
     setAdd(true)
-  };
+  }
+  
   return (
     <div>
       <article className="article-container">

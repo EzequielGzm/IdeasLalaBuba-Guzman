@@ -1,8 +1,8 @@
 import { useContext } from 'react'
 import { AiOutlineShoppingCart} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
-import "../assets/css/NavBar.css"
 import { CartContext } from '../context/CartContext'
+import "../assets/css/NavBar.css"
 
 
 const CartWidget = () => {

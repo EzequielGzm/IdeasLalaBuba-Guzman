@@ -1,4 +1,6 @@
 import { createContext, useContext, useState } from "react";
+import { addDoc, collection, getFirestore} from "firebase/firestore"
+
 
 export const CartContext = createContext([]);
 
@@ -44,6 +46,32 @@ const CartContextProvider = ({ children }) => {
   const totalPrice = () =>{
     return cartList.reduce((count,prod)=> count + (prod.price * prod.qty),0)
   }
+  // Generar nueva orden en carrito
+  function newOrder() {
+    let order = {};
+    let dateBuyer= new Date()
+
+    order.buyer ={name:'Ricardo', email:'ricardokpo@gmail.com', phone:'1133003300'}
+    order.total= totalPrice()
+    order.product = cartList.map(product =>{
+      let id = product.id
+      let name = product.title
+      let price = product.price * product.qty
+      let date = dateBuyer
+      return {id,name,price,date}
+    })
+    console.log(order);
+    
+    const db = getFirestore()
+    const queryCollection = collection(db,'orders')
+    addDoc(queryCollection, order)
+    .then(res => console.log(res))
+    .catch(err => console.log(err))
+    .finally(()=> deleteCart())
+  }
+
+  
+  
   return (
     <CartContext.Provider
       value={{
@@ -53,7 +81,8 @@ const CartContextProvider = ({ children }) => {
         isInCart,
         removeItem,
         totalQty,
-        totalPrice
+        totalPrice,
+        newOrder
       }}
     >
       {children}

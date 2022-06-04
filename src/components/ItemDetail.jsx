@@ -21,14 +21,23 @@ const ItemDetail = ({ item }) => {
         <p>${item.price}</p>
 
         <div>
-          {add ? (
-            <h3> Tu producto fue añadido al carrito </h3>
-          ) : (
-            <ItemCount stock={5} initial={1} onAdd={onAdd} />
-          )}
+          {add ? 
+           <>
+           <h3> Tu producto fue añadido al carrito </h3>
+            <Link className="button1" to="/">
+            Seguir comprando
+          </Link>
+          
           <Link className="button1" to="/cart">
             Finalizar compra
           </Link>
+          </>
+           : 
+           <ItemCount stock={5} initial={1} onAdd={onAdd} />
+    
+          }
+
+          
         </div>
       </article>
     </div>

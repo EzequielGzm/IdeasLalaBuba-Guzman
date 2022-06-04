@@ -1,34 +1,25 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
+import CartList from "./CartList";
 import "../assets/css/cart.css"
 
 const Cart = () => {
-  const { deleteCart, cartList, removeItem,totalPrice } = useContext(CartContext);
+  const { deleteCart, cartList,totalPrice,newOrder} = useContext(CartContext);
 
   return (
-    <div className="article-cart">
-      {cartList.map((item) => {
-        return (
-          <div key={item.id}>
-          <li>
-            <h1>{item.title}</h1>
-            <img src={item.img}></img>
-            <p> ${item.price}</p>
-            <p> Cantidad de productos seleccionados: {item.qty}</p>
-          </li>
-            <button className="button1" onClick={() => removeItem(item.id)}>
-              BORRAR PRODUCTO
-            </button>
-          </div>
-        );
-      })}
-      
+
+<div className="article-container">
+     
+      <CartList/>
       
       {cartList.length ? (<div>
-          <h2>El precio total del carrito es : ${totalPrice()}</h2>
+          <h2>Total del carrito: ${totalPrice()}</h2>
         <button className="button1" onClick={deleteCart}>
           Vaciar carrito
+        </button>
+        <button className="button1" onClick={newOrder}>
+          Finalizar la compra
         </button>
         </div>
       ) : (

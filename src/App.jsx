@@ -6,6 +6,7 @@ import ItemDetailContainer from './components/ItemDetailContainer'
 import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom'
 import Cart from './components/Cart'
 import CartContextProvider from './context/CartContext'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
        
         <Route path="/*" element={<Navigate to="/" replace/>} />
        </Routes>
+    <Footer/>  
     </div>
     </CartContextProvider>
     </BrowserRouter>

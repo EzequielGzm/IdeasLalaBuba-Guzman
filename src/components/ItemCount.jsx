@@ -14,7 +14,7 @@ const ItemCount = ({stock,initial,onAdd}) => {
       
        <div className="container-contador">
         <button onClick={()=> addProduct(-1)} disabled={qty === initial ? true : null}> - </button>
-        <span>{qty}</span>
+        <span className="count">{qty}</span>
         <button onClick={() => addProduct(+1)} disabled={qty === stock ? true : null} > + </button>
        </div>
 

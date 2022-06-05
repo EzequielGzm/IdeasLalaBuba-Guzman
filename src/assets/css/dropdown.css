@@ -5,14 +5,14 @@
     justify-content: center;
     
 }
-.dropdown-menu{
+ .dropdown-uno{
     width: 10rem;
     text-align: center;
     color: black;
     cursor: pointer;
     position: relative;
     
-}
+} 
 
 .dropdown-menu:hover{
     color: white;

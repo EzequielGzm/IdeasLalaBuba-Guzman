@@ -9,7 +9,7 @@ const Cart = () => {
 
   return (
 
-<div className="article-container">
+<div className="cart-container">
      
       <CartList/>
       

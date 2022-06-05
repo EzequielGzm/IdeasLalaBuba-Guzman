@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
 
 
+
 function NavBar() {
     return (
       
@@ -31,7 +32,7 @@ function NavBar() {
              <div className="user-container">
              <CartWidget/>
              <UserWidget/>
-             <button>Iniciar sesión</button>
+             
              </div>
         
       </header>

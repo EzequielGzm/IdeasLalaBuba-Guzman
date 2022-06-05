@@ -7,17 +7,17 @@ const Dropdown = () => {
   
     return (
 
-    <div className="dropdown">
-       <div className="dropdown-menu" onClick={()=>setDrop(!drop)} >
-        Productos
-        {drop? (<ul className="dropdown-list" >
-            <Link to="/category"> <li>Tocadores </li></Link>
-            <Link to="/cart"><li>Alhajeros</li></Link>            
-        </ul>): 
-        null}
-        </div>
-        
-    </div>
+      <div className="dropdown">
+      <div className="dropdown-uno" onClick={()=>setDrop(!drop)} >
+       Productos
+       {drop? (<ul className="dropdown-list" >
+           <Link to="/category/tocadores"> <li>Tocadores </li></Link>
+           <Link to="/category/alhajeros"><li>Alhajeros</li></Link>            
+       </ul>): 
+       null}
+       </div>
+       
+   </div>
   )
 }
 

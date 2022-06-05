@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 import {collection, getDocs, where, getFirestore, query} from "firebase/firestore"
 import ItemList from "./ItemList";
 import "../assets/css/ItemListContainer.css";
-import Footer from "./Footer";
+
+import Carrousel from "./Carrousel";
+
 
 
 
@@ -30,8 +32,9 @@ const ItemListContainer = () => {
         <h1>Cargando productos...</h1>
       : 
       <div>
-        <ItemList products={products} ></ItemList>
-        
+       <Carrousel/>
+       <ItemList products={products} ></ItemList>
+   
       </div>
        }
     </div>

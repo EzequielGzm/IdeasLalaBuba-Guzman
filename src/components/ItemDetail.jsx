@@ -1,8 +1,8 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
-import "../assets/css/contador.css";
 import { useCartContext } from "../context/CartContext";
+import "../assets/css/contador.css";
 
 const ItemDetail = ({ item }) => {
   const { addItem } = useCartContext();
@@ -15,7 +15,7 @@ const ItemDetail = ({ item }) => {
   
   return (
     <div>
-      <article className="article-container">
+      <article>
         <h1>{item.title}</h1>
         <img src={item.img}></img>
         <p>${item.price}</p>

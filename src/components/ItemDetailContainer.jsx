@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import ItemDetail from './ItemDetail'
-import { getDetailById } from "../data/products"
 import { useParams } from 'react-router-dom'
 import { doc, getDoc, getFirestore } from 'firebase/firestore';
 
@@ -20,7 +19,7 @@ const ItemDetailContainer = () => {
     },[detalleId])
      
     return (
-    <div>
+    <div className='article-detail'>
      {loading ? <h1>Cargando producto...</h1> : <ItemDetail item= {item}/>}
     </div>
   )

@@ -5,5 +5,4 @@ const UserWidget = () => {
     <h3 className='icon'><BiUser/></h3>
   )
 }
-
 export default UserWidget

@@ -30,7 +30,7 @@ header div img {
 h1 {
   font-size: 20px;
 }
-form {
+.search-form {
   background-color: #282c34;
   width: 400px;
   height: 44px;
@@ -39,7 +39,7 @@ form {
   flex-direction: row;
   align-items: center;
 }
-input {
+.input-search {
   all: unset;
   font: 16px system-ui;
   color: #fff;

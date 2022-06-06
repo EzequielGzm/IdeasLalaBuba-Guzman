@@ -10,11 +10,29 @@
   border-radius: 5px; 
 }
 
+.cart-box{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
 .cart-container{
+    display: flex;  
+    align-items: center;
+    justify-content: space-evenly;
     padding: 20px;
     background-color: rgba(0, 0, 255, 0.2);
     margin: 20px;
     box-shadow: 3px 4px 5px 0px rgb(0 0 0 / 38%);
     text-decoration: none;
     border-radius: 5px;
+}
+
+.form-cart{
+  background-color: #a0c4ff;
+  border-radius: 5px;
+}
+
+.form-cart input{
+  background-color: gray;
+
 }

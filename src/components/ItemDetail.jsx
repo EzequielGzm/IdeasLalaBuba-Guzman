@@ -14,11 +14,13 @@ const ItemDetail = ({ item }) => {
   }
   
   return (
-    <div>
+    
       <article>
-        <h1>{item.title}</h1>
+        <div>
         <img src={item.img}></img>
+        <h1>{item.title}</h1>
         <p>${item.price}</p>
+        </div>
 
         <div>
           {add ? 
@@ -40,7 +42,7 @@ const ItemDetail = ({ item }) => {
           
         </div>
       </article>
-    </div>
+    
   );
 };
 

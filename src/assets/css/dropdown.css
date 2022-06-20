@@ -2,28 +2,24 @@
     height: 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;  
 }
  .dropdown-uno{
     width: 10rem;
     text-align: center;
     color: black;
     cursor: pointer;
-    position: relative;
-    
+    position: relative;  
+    padding: 2rem;
 } 
-
-.dropdown-menu:hover{
+.dropdown-uno:hover{
     color: white;
 }
-
 .dropdown-list{   
     list-style-type: none ;
     position: absolute;
+    bottom: -0.5rem
 }
 .dropdown-list li{
     border: 1px solid transparent;
-   
-  
 }

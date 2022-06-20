@@ -13,9 +13,9 @@ function NavBar() {
             <a href="/"><img src={logo} alt="logo"/></a>
           </div>
             <h1>IDEAS LALA BUBA</h1>
-          <form className="search-form">
+         {/*  <form className="search-form">
           <input className="input-search" type="search" placeholder="Buscar productos..."/>
-          </form>
+          </form> */}
           
           <nav>
              <ul >

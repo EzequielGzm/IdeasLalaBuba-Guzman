@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState,useEffect } from "react";
 
 
 export const CartContext = createContext([]);
@@ -8,8 +8,20 @@ export function useCartContext() {
 }
 
 const CartContextProvider = ({ children }) => {
+  
 
-  const [cartList, setCartList] = useState([]);
+  const [cartList, setCartList] = useState(()=>{
+    try{
+      const cartFromLocalStorage = localStorage.getItem("cartProducts");
+      return cartFromLocalStorage ? JSON.parse(cartFromLocalStorage) : []
+    } catch(error){
+      return []
+    }
+  });
+  
+  useEffect(()=>{
+   localStorage.setItem("cartProducts", JSON.stringify(cartList))
+      },[cartList])
 
   // Verificando id del producto a agregar
   const isInCart = (id) => {
@@ -38,6 +50,7 @@ const CartContextProvider = ({ children }) => {
     setCartList(cartList.filter(el => el.id !== id))
   }
 // Cantidad de productos en el carrito
+
   const totalQty = ()=>{
     return cartList.reduce((count,prod)=> count += prod.qty,0)
   }
@@ -45,7 +58,7 @@ const CartContextProvider = ({ children }) => {
   const totalPrice = () =>{
     return cartList.reduce((count,prod)=> count + (prod.price * prod.qty),0)
   }
-  
+
   return (
     <CartContext.Provider
       value={{

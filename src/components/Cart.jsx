@@ -1,25 +1,32 @@
-import { useContext } from "react";
+import { useContext, useEffect} from "react";
 import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
 import CartList from "./CartList";
 import "../assets/css/cart.css"
-import FormCart from "./FormCart";
+import Popup from "./Popup";
+
+
 
 const Cart = () => {
-  const { deleteCart, cartList,totalPrice,newOrder} = useContext(CartContext);
+  const { deleteCart, cartList,totalPrice} = useContext(CartContext);
 
+  
   return (
 
 <div className="cart-container">
      
       <CartList/>
       
-      {cartList.length ? (<div className="cart-box">
-          <h2>Total del carrito: ${totalPrice()}</h2>
+      {cartList.length ? (
+      <div className="cart-box">
+       
+       <div> 
         <button className="button1" onClick={deleteCart}>
           Vaciar carrito
         </button>
-       <FormCart/>
+       <Popup/>
+       </div>
+          <h2>Total del carrito: ${totalPrice()}</h2>
         </div>
       ) : (
         <div>

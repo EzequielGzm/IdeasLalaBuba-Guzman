@@ -41,11 +41,12 @@ const FormCart = () => {
 
     return (
     <form className="form-cart" onSubmit={handleSubmit}>
-        <h1>Complete sus datos:</h1>
+       {/*  <h1>Complete sus datos:</h1> */}
         
         <label>Nombre</label>
         <input 
         placeholder='nombre'
+        type='text'
         value={name}
         onChange={(e)=> setName(e.target.value)}
         />
@@ -53,6 +54,7 @@ const FormCart = () => {
         <label>Email</label>
         <input 
         placeholder='Email'
+        type='email'
         value={email}
         onChange={(e)=> setEmail(e.target.value)}
         />
@@ -60,6 +62,7 @@ const FormCart = () => {
         <label>Telefono</label>
         <input 
         value={phone}
+        type='text'
         onChange={(e)=> setPhone(e.target.value)}
         placeholder='telefono'
         />

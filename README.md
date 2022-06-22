@@ -16,7 +16,7 @@ Simulación de E-commerce de muebles para niños realizado para proyecto final e
 
 https://ideaslalabuba.netlify.app/
 
-#Por hacer
+# Por hacer
 
 - Responsive web
 - Users

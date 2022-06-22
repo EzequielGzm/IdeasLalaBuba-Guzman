@@ -20,6 +20,7 @@ const ItemDetail = ({ item }) => {
         <img src={item.img}></img>
         <h1>{item.title}</h1>
         <p>${item.price}</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio eos voluptate quae earum temporibus, cumque modi commodi quidem mollitia. Architecto, quae facilis fugit minus officia quibusdam perferendis consequuntur reiciendis accusamus?</p>
         </div>
 
         <div>

@@ -16,7 +16,8 @@
   align-items: center;
 }
 .cart-container{
-    display: flex;  
+    display: flex;
+    flex-direction: column;  
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
@@ -35,10 +36,21 @@
 }
 
 .cart-container img {
-  width: 480px;
-  height: 700px;
+  width: 200px;
+  height: 300px;
 }
 .cart-container h1{
   font-weight: bold;
+}
+.container-product{
+  display: flex;
+}
+.popup{
+
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-image: transparent;
+  
 }
 

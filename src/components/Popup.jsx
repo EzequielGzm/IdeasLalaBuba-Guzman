@@ -18,7 +18,7 @@ const Popup = () => {
           <Modal.Header closeButton>
             <Modal.Title>Complete con sus datos para finalizar su pedido:</Modal.Title>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body className='popup'>
             <FormCart/>
             </Modal.Body>
          

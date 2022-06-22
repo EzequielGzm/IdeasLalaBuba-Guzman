@@ -11,9 +11,9 @@
 }
 
 footer {
-  text-align: center;
-  background-image: url("https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   font-family: 'Handlee', cursive;
+  text-align: center;
   font-size: 15px;
-  
+  background-image: url("https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
 }

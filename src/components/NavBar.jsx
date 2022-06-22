@@ -10,13 +10,9 @@ function NavBar() {
       
       <header className="header">
           <div className="logo">
-            <a href="/"><img src={logo} alt="logo"/></a>
+            <Link className="logo" to="/"><img src={logo} alt="logo"/></Link>
           </div>
             <h1>IDEAS LALA BUBA</h1>
-         {/*  <form className="search-form">
-          <input className="input-search" type="search" placeholder="Buscar productos..."/>
-          </form> */}
-          
           <nav>
              <ul >
               

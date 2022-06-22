@@ -8,7 +8,7 @@ const CartList = ()=> {
     const {cartList, removeItem} = useContext(CartContext);
     return (
     
-    <div >
+    <div className="container-product">
        
        {cartList.map((item) => {
        
